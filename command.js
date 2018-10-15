@@ -4,6 +4,7 @@ var moment = require('moment');
 require("dotenv").config();
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
+var song = "";
 
 // Create the Command constructor
 var Command = function () {
@@ -57,7 +58,7 @@ var Command = function () {
 
 
             var result = data.tracks.items[0];
-            console.log(result);
+           // console.log(result);
             //data.tracks.items[0].artists[0].name
 
             // songData ends up being the string containing the song data we will print to the console
@@ -100,7 +101,7 @@ var Command = function () {
 
                 // Parse the body of the site and print details to command line
                 var result = JSON.parse(body);
-                console.log(result);
+               // console.log(result);
 
                 console.log("Movie title: " + result.Title);
                 console.log("Year Released: " + result.Year);
@@ -110,8 +111,8 @@ var Command = function () {
                 console.log("Language: " + result.Language);
                 console.log("Plot: " + result.Plot);
                 // console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
-               
-               
+
+
                 // movieData ends up being the string containing the movie data we will print to the console
                 var movieData = [
                     "Movie title: " + result.Title,
@@ -136,7 +137,37 @@ var Command = function () {
 
     }
 
+    //create do what it says 
+
+    this.doThis = function () {
+    
+        //Reads text in random.txt file
+        fs.readFile("random.txt", "utf8", function(error, data) {
+            // If the code experiences any errors it will log the error to the console.
+              if (error) {
+                return console.log(error);
+              }
+               // We will then print the contents of data
+           //  console.log(data);
+    
+             // Then split it by commas (to make it more readable)
+              var randomArray = data.split(",");
+    
+              // We will then re-display the content as an array for later use.
+            
+              console.log(randomArray[1]);
+              //Call the findSong function to display the song info for "I want it that way."
+              song = randomArray[1];
+            
+         });
+         console.log(song);
+          this.findSong(song); 
+    };
 }
+
+
+
+
 module.exports = Command;
 
 

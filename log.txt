@@ -1,0 +1,31 @@
+Venue Name: XS Las Vegas
+
+Location: Las Vegas
+
+Concert Date: 10/19/2018
+------------------------------------------------------------
+
+Song Name: Purple Rain
+
+Artist name Prince
+
+Album: Purple Rain
+
+Preview Link: https://p.scdn.co/mp3-preview/2fe008411edea4f21355301daa8993663eaf46f8?cid=4d3336d7ff7b401bb908b71643fbd8fd
+------------------------------------------------------------
+
+Movie title: Cars
+
+Year Released: 2006
+
+IMDB Rating: 7.1
+
+Rotten Tomatoes Rating: 74%
+
+Country where produced: USA
+
+Language: English, Italian, Japanese, Yiddish
+
+Plot: A hot-shot race-car named Lightning McQueen gets waylaid in Radiator Springs, where he finds the true meaning of friendship and family.
+------------------------------------------------------------
+

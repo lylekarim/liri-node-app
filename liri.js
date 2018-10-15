@@ -4,7 +4,6 @@ var Command= require("./command.js");
 // Create a new Command object
 var command = new Command();
 
-
 // Grab search command line argument
 var search = process.argv[2];
 // Joining the remaining arguments since an actor or tv concert-this name may contain spaces
@@ -46,7 +45,11 @@ if (!search) {
     console.log("Searching for Movie");
     command.findMovie(term);
     
-  } else if (search === "do-what-it-says") {
+  } else if (search === "random") {
     console.log("Following Orders");
-    command.findAnOrder(term);
+   
+    console.log("dosomething" + command.doThis());
+   command.doThis();
   }
+
+ 
